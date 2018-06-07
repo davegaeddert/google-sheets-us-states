@@ -71,7 +71,7 @@ var by_abbr = {
 var by_full = {};
 for (var prop in by_abbr) {
     if(by_abbr.hasOwnProperty(prop)) {
-        by_full[by_abbr[prop]] = prop;
+        by_full[by_abbr[prop].toUpperCase()] = prop;
     }
 }
 
@@ -86,7 +86,7 @@ function STATE_ABBREVIATION_TO_FULL(input) {
   if (input.map) {            // Test whether input is an array.
     return input.map(STATE_ABBREVIATION_TO_FULL); // Recurse over array if so.
   } else {
-    return by_abbr[input];
+    return by_abbr[input.toUpperCase()];
   }
 }
 
@@ -101,6 +101,6 @@ function STATE_FULL_TO_ABBREVIATION(input) {
   if (input.map) {            // Test whether input is an array.
     return input.map(STATE_FULL_TO_ABBREVIATION); // Recurse over array if so.
   } else {
-    return by_full[input];
+    return by_full[input.toUpperCase()];
   }
 }
