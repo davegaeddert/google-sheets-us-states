@@ -1,4 +1,6 @@
-var by_abbr = {    
+var by_abbr = { 
+    
+    // US States
     'AL':'Alabama',
     'AK':'Alaska',
     'AZ':'Arizona',
@@ -49,9 +51,22 @@ var by_abbr = {
     'WV':'West Virginia',
     'WI':'Wisconsin',
     'WY':'Wyoming',
-    
+   
     'DC':'District of Columbia',
     
+    // US territories
+    'AS':'American Samoa',
+    'GU':'Guam',
+    'MP':'Northern Mariana Islands',
+    'PR':'Puerto Rico',
+    'VI':'United States Virgin Islands',
+    
+    // US Armed Forces
+    'AA':'Armed Forces Americas',
+    'AE':'Armed Forces',
+    'AP':'Armed Forces Pacific',
+    
+    // Canada
     'AB':'Alberta',
     'BC':'British Columbia',
     'MB':'Manitoba',
@@ -64,7 +79,8 @@ var by_abbr = {
     'PE':'Prince Edward Island',
     'QC':'Quebec',
     'SK':'Saskatchewan',
-    'YT':'Yukon',
+    'YT':'Yukon'
+    
 }
 
 // store the inverse as a separate object
